@@ -490,6 +490,7 @@ p:last-child{
 @media (min-width: 768px) {
   .ep-single-cc .txt-clm {
     display: block !important;
+    height: initial !important;
   }
 }
 .ep-single-cc .txt-clm p {
@@ -671,6 +672,14 @@ p:last-child{
 }
 .prf-section-inner .prt-sec-title  h4.add-flow-ttl span.in-arr{
   color: #fff;
+}
+
+.prf-table-cont {
+  margin: 0 0 7px;
+  overflow: auto;
+}
+.prf-table-cont .table-image {
+  min-width: 800px;
 }
 
 /* prf-section-end */
