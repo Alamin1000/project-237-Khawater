@@ -377,7 +377,11 @@ p:last-child{
   margin: 54px 0 0;
 }
 .hero-ex-slide {
-
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.center .hero-ex-slide {
+  opacity: 1;
 }
 .hero-ex-slide img {
 
@@ -482,6 +486,11 @@ p:last-child{
 }
 .ep-single-cc .txt-clm {
   text-align: right;
+}
+@media (min-width: 768px) {
+  .ep-single-cc .txt-clm {
+    display: block !important;
+  }
 }
 .ep-single-cc .txt-clm p {
   font-size: 20px;

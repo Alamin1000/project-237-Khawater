@@ -30,12 +30,14 @@
     margin:20,
     responsiveClass:true,
     nav:false,
+    center:true,
     navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
     responsive:{
         0:{
             items:1,
+            stagePadding: 80
         },
-        600:{
+        576:{
             items:3,
         },
         1000:{

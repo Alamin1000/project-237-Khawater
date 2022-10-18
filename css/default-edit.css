@@ -13,6 +13,7 @@
     justify-content: center;
     text-align: center;
     transition: 0.3s;
+    font-weight: 600;
 }
 .default-button:hover {
     background: #fff;
