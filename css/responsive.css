@@ -88,6 +88,57 @@
     .ep-single-cc {
         margin: 0px 0 27px;
     }
+
+
+    .obj-shape1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 800px;
+    }
+    .obj-single .text p {
+        font-size: 16px;
+    }
+    .obj-single .icon {
+        margin: 0 0 0 25px;
+        width: 30px;
+    }
+    .obj-single {
+        padding: 25px 22px;
+        border-radius: 7px;
+    }
+    .obj-sec-main-rw {
+        --inner-space: 52px;
+        --bt-space: 40px;
+    }
+    .obj-section {
+        padding: 75px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .rsn-b-shape-1 {
+        width: 300px;
+    }
+    .rsn-b-shape-2 {
+        width: 220px;
+    }
+    .rsn-cnt-sng p {
+        font-size: 16px;
+    }
+    .rsn-cnt-sng::after {
+        width: 5px;
+    }
+    .rsn-cnt-sng {
+        padding-right: 23px;
+    }
+    .rsn-sec-m-rw {
+        --inner-space: 50px;
+        --bt-space: 40px;
+    }
+    .rsn-section {
+        padding: 80px 0 60px;
+    }
 }
 
 
