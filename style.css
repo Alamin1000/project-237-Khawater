@@ -441,3 +441,132 @@ p:last-child{
   background: var(--theme__color1) !important;
 }
 /* ---slider-element---end */
+
+
+/* ---ep-section--- */
+.ep-section {
+  padding: 106px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.ep-b-shape {
+  position: absolute;
+  z-index: -1;
+}
+.eb-b-shape1 {
+  top: 0;
+  left: 0;
+}
+.eb-b-shape2 {
+  bottom: 0;
+  right: 0;
+}
+.ep-section-inner {
+
+}
+.ep-sec-title {
+
+}
+
+
+.ep-sec-main {
+
+}
+.ep-single-cc {
+  margin: 0 0 34px;
+  display: flex;
+}
+.ep-single-cc:last-child {
+  margin: 0;
+}
+.ep-single-cc .txt-clm {
+  text-align: right;
+}
+.ep-single-cc .txt-clm p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.ep-single-cc .arr-tri {
+  padding: 0 52px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ep-single-cc .arr-tri img {
+  width: 25px;
+}
+.ep-single-cc .button-clm {
+  flex-shrink: 0;
+  width: 31.4%;
+}
+.ep-single-cc .button-clm .default-button {
+
+}
+/* ---ep-section---end */
+
+
+
+/* ---obj-section--- */
+.obj-section {
+  padding: 95px 0;
+  position: relative;
+  z-index: 1;
+}
+.obj-bg-shape {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  z-index: -1;
+}
+.obj-shape1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.obj-shape2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.obj-section-inner {
+
+}
+.obj-sec-title {
+
+}
+
+
+.obj-sec-main-rw {
+  --inner-space: 80px;
+  --bt-space: var(--inner-space);
+  --item: 2;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--inner-space) * -0.5) calc(var(--bt-space) * -1 );
+  justify-content: center;
+}
+.obj-single {
+  padding: 30px;
+  width: calc((100% / var(--item)) - var(--inner-space));
+  margin: 0  calc(var(--inner-space) * 0.5) var(--bt-space);
+  background: linear-gradient(-90.3deg, rgba(0, 188, 200, 0.4) 0.26%, rgba(0, 188, 200, 0.02) 87.38%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.obj-single .icon {
+  flex-shrink: 0;
+  order: 2;
+}
+.obj-single .icon img {
+
+}
+.obj-single .text {
+
+}
+.obj-single .text p {
+
+}
+/* ---obj-section---end */
