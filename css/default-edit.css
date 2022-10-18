@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.3s;
+}
+.default-button:hover {
+    background: #fff;
+    color: var(--background);
+    border-color: #fff;
 }
 /* buttons-end */
 
