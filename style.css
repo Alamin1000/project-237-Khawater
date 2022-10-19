@@ -177,7 +177,7 @@ p:last-child{
 .main-menu > ul > li {
   margin-right: 76px;
 }
-.main-menu > ul > li:last-child {
+.main-menu > ul > li:first-child {
   margin-right: 0;
 }
 .main-menu > ul > li > a {
@@ -355,6 +355,7 @@ p:last-child{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
 .hero-text-side .h1 {
   font-size: 45px;
@@ -599,9 +600,9 @@ p:last-child{
   align-items: center;
 }
 .obj-single .icon {
-  margin: 0 0 0 37px;
-  flex-shrink: 0;
-  order: 2;
+	margin: 0 0 0 37px;
+	flex-shrink: 0;
+	/* order: 0; */
 }
 .obj-single .icon img {
 
@@ -703,7 +704,7 @@ p:last-child{
   font-weight: 600;
 }
 .prf-section-inner .prt-sec-title  h4.add-flow-ttl span.in-arr{
-  color: rgb(219, 175, 175);
+  color: #fff;
 }
 
 .prf-table-cont {
@@ -730,20 +731,21 @@ p:last-child{
   z-index: 1;
   background: url('images/invest-background.png') no-repeat center center/cover;
 }
-.why-point-sng .number{
-  width: 89px;
-  height: 86px;
-  flex: 0 0 auto;
-  background-image: url('images/img-2/number-bg.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: rgba(0, 188, 200, 0.4);
-  font-size: 35px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  padding-left: 12px;
+.why-point-sng .number {
+	width: 89px;
+	height: 86px;
+	flex: 0 0 auto;
+	background-image: url('images/img-2/number-bg.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: rgba(0, 188, 200, 0.4);
+	font-size: 35px;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	padding-right: 12px;
+	justify-content: center;
 }
 .why-point-sng .text p{
   font-weight: 500;
@@ -764,8 +766,9 @@ p:last-child{
 .why-point-sng:nth-child(odd) .text{
   text-align: end;
 }
-.why-point-sng:nth-child(odd){
+.why-point-sng:nth-child(even){
   flex-direction: row-reverse;
+  margin-right: auto;
 }
 .why-point-sng:nth-child(even) .number{
   margin-right: 30px;
@@ -808,7 +811,7 @@ p:last-child{
   background: #251928;
   border-radius: 16px;
   position: relative;
-
+  text-align: right;
   margin-bottom: 25px;
 }
 .single-faq::after{
@@ -902,6 +905,7 @@ p:last-child{
   align-items: flex-start;
   position: relative;
   z-index: 1;
+  direction: ltr;
 }
 .footer-logo-column a{
   display: inline-block;

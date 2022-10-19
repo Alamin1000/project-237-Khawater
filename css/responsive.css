@@ -203,6 +203,7 @@
         width: 100%;
         margin: 0 0 50px;
         text-align: center;
+        order: -1;
     }
     .hero-media-side {
         width: 100%;

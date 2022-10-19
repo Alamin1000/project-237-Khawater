@@ -48,6 +48,7 @@
     nav:false,
     autoplay:true,
     center:true,
+    rtl:true,
     navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
     responsive:{
         0:{
