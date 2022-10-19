@@ -417,7 +417,7 @@ p:last-child{
   opacity: 1;
 }
 .hero-ex-slide img {
-
+  border-radius: 11%;
 }
 /* ---hero-section---end */
 

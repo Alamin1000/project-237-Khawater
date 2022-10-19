@@ -46,20 +46,22 @@
     margin:20,
     responsiveClass:true,
     nav:false,
-    autoplay:true,
+    // autoplay:true,
     center:true,
     rtl:true,
     navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
     responsive:{
         0:{
             items:1,
-            stagePadding: 50,
-            margin:8,
+            stagePadding: 90,
+            margin:45,
+            // stagePadding: 50,
+            // margin:8,
         },
         410:{
           items:1,
-          stagePadding: 80,
-          margin:12,
+          stagePadding: 110,
+          margin:55,
         },
         576:{
             items:3,
@@ -70,6 +72,17 @@
         }
     }
   });
+
+
+  // adjust-ratio
+  $(window).on('resize load',adjustRatio);
+  function adjustRatio() {
+    $('.know-width').each(function(){
+      var knowwv = $(this).outerWidth();
+      $(this).css('--this-width', knowwv + 'px');
+      $(this).css('--this-width-number', knowwv);
+      });
+  }
 
 })(jQuery);
 
