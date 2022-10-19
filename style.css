@@ -22,6 +22,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--poppins);
 }
+.page-rtl {
+  direction: rtl;
+}
 a, a:active, a:focus, a:active, a:hover {
   text-decoration:none !important;
   color: inherit;
@@ -109,11 +112,40 @@ p:last-child{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10000;
 }
 .header-in {
   padding: 26px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header-in-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.header-in-bg::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  position: absolute;
+  height: 200%;
+  width: 200%;
   background: #2C222F;
+  background: rgba(44, 34, 47, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  /* filter: blur(10px); */
+}
+.sticky .header-in-bg::after {
+
 }
 .header-section-inner {
   display: flex;
@@ -294,7 +326,7 @@ p:last-child{
 /* ---hero-section--- */
 .hero-section {
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .hero-content-row {
@@ -671,12 +703,13 @@ p:last-child{
   font-weight: 600;
 }
 .prf-section-inner .prt-sec-title  h4.add-flow-ttl span.in-arr{
-  color: #fff;
+  color: rgb(219, 175, 175);
 }
 
 .prf-table-cont {
   margin: 0 0 7px;
   overflow: auto;
+  direction: rtl;
 }
 .prf-table-cont .table-image {
   min-width: 800px;
@@ -693,6 +726,9 @@ p:last-child{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  z-index: 1;
+  background: url('images/invest-background.png') no-repeat center center/cover;
 }
 .why-point-sng .number{
   width: 89px;
@@ -745,10 +781,12 @@ p:last-child{
 .why-b-shape-1{
   left: 0px;
   bottom: 0px;
+  z-index: -1;
 }
 .why-b-shape-2{
   right: 0px;
   top: 0px;
+  z-index: -1;
 }
 
 

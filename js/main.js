@@ -16,12 +16,28 @@
   });
   $(document).mouseup(function(e){
     var container = $(".offmenu");
-  
+
     // If the target of the click isn't the container
     if(!container.is(e.target) && container.has(e.target).length === 0){
       $('.offcanvas-menu').removeClass('active');
       $('.offcanvas-overlay').removeClass('active');
     }
+  });
+
+  // sticky-menu
+  var wind = $(window);
+    var sticky = $('#sticky-header');
+    wind.on('scroll', function() {
+        var scroll = wind.scrollTop();
+        if (scroll < 5) {
+            sticky.removeClass('sticky');
+        } else {
+            sticky.addClass('sticky');
+        }
+    });
+  $(window).on('load resize',function(){
+    $('.header-section').height($('.header-in').outerHeight());
+    $('body').css('--header-height',$('.header-in').outerHeight() + 'px');
   });
 
   // hero-ex-slider
@@ -30,15 +46,23 @@
     margin:20,
     responsiveClass:true,
     nav:false,
+    autoplay:true,
     center:true,
     navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
     responsive:{
         0:{
             items:1,
-            stagePadding: 80
+            stagePadding: 50,
+            margin:8,
+        },
+        410:{
+          items:1,
+          stagePadding: 80,
+          margin:12,
         },
         576:{
             items:3,
+            margin:12,
         },
         1000:{
             items:3,
